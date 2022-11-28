@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Overpass:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Overpass:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(0, 0%, 95%);
+    position: relative;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box{
+    padding: 40px 40px 40px 40px;
+}
+.box h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+.box p{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.9;
+    padding-bottom: 100px;
+    font-size: 13px;
+    width: 90%;
+}
+.box button{
+    border-radius: 25px;
+    padding: 15px 30px;
+    text-transform: capitalize;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.one{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+.one button{
+    color: hsl(31, 77%, 52%);
+    border: 2px solid hsl(31, 77%, 52%);
+}
+.one button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.two{
+    background-color: hsl(184, 100%, 22%);
+}
+.two button{
+    color: hsl(184, 100%, 22%);
+    border: 2px solid hsl(184, 100%, 22%);
+}
+.two button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.three{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+.three button{
+   color: hsl(179, 100%, 13%);
+   border: 2px solid hsl(179, 100%, 13%);
+}
+.three button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.attribution{
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 11px;
+}
+.attribution a{
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
+@media (max-width: 768px) {
+    body{
+        height: 1500px;
+    }
+    .one{
+        border-radius: 10px 10px 0 0;
+    }
+    .three{
+        border-radius: 0 0 10px 10px;
+    }
+}
